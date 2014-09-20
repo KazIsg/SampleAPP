@@ -9,5 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface SAMViewController : UIViewController
+- (IBAction)buttonTapped:(id)sender;
+@property (weak, nonatomic) IBOutlet UILabel *label;
 
 @end

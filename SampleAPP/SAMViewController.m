@@ -26,4 +26,10 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)buttonTapped:(id)sender {
+    self.label.text = @"hoge!hoge!";
+}
+
+- (IBAction)goBack:(UIStoryboardSegue *)segue {}
+
 @end

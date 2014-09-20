@@ -21,6 +21,8 @@
 		1B59061919B2C09700CC9F1D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B5905FB19B2C09600CC9F1D /* UIKit.framework */; };
 		1B59062119B2C09700CC9F1D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1B59061F19B2C09700CC9F1D /* InfoPlist.strings */; };
 		1B59062319B2C09700CC9F1D /* SampleAPPTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B59062219B2C09700CC9F1D /* SampleAPPTests.m */; };
+		1B9E4F6619C48CC00028AAA7 /* P1080842.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 1B9E4F6519C48CBF0028AAA7 /* P1080842.JPG */; };
+		1B9E4F6819C48D1F0028AAA7 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B9E4F6719C48D1F0028AAA7 /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,8 @@
 		1B59061E19B2C09700CC9F1D /* SampleAPPTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SampleAPPTests-Info.plist"; sourceTree = "<group>"; };
 		1B59062019B2C09700CC9F1D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1B59062219B2C09700CC9F1D /* SampleAPPTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SampleAPPTests.m; sourceTree = "<group>"; };
+		1B9E4F6519C48CBF0028AAA7 /* P1080842.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = P1080842.JPG; sourceTree = "<group>"; };
+		1B9E4F6719C48D1F0028AAA7 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +66,7 @@
 			files = (
 				1B5905FA19B2C09600CC9F1D /* CoreGraphics.framework in Frameworks */,
 				1B5905FC19B2C09600CC9F1D /* UIKit.framework in Frameworks */,
+				1B9E4F6819C48D1F0028AAA7 /* MapKit.framework in Frameworks */,
 				1B5905F819B2C09600CC9F1D /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -101,6 +106,7 @@
 		1B5905F619B2C09600CC9F1D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1B9E4F6719C48D1F0028AAA7 /* MapKit.framework */,
 				1B5905F719B2C09600CC9F1D /* Foundation.framework */,
 				1B5905F919B2C09600CC9F1D /* CoreGraphics.framework */,
 				1B5905FB19B2C09600CC9F1D /* UIKit.framework */,
@@ -112,6 +118,7 @@
 		1B5905FD19B2C09600CC9F1D /* SampleAPP */ = {
 			isa = PBXGroup;
 			children = (
+				1B9E4F6519C48CBF0028AAA7 /* P1080842.JPG */,
 				1B59060619B2C09600CC9F1D /* SAMAppDelegate.h */,
 				1B59060719B2C09600CC9F1D /* SAMAppDelegate.m */,
 				1B59060919B2C09600CC9F1D /* Main.storyboard */,
@@ -200,6 +207,13 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "石毛 和夫";
 				TargetAttributes = {
+					1B5905F319B2C09600CC9F1D = {
+						SystemCapabilities = {
+							com.apple.iOS = {
+								enabled = 1;
+							};
+						};
+					};
 					1B59061419B2C09700CC9F1D = {
 						TestTargetID = 1B5905F319B2C09600CC9F1D;
 					};
@@ -231,6 +245,7 @@
 			files = (
 				1B59061019B2C09600CC9F1D /* Images.xcassets in Resources */,
 				1B59060219B2C09600CC9F1D /* InfoPlist.strings in Resources */,
+				1B9E4F6619C48CC00028AAA7 /* P1080842.JPG in Resources */,
 				1B59060B19B2C09600CC9F1D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -377,6 +392,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SampleAPP/SampleAPP-Prefix.pch";
 				INFOPLIST_FILE = "SampleAPP/SampleAPP-Info.plist";
@@ -390,6 +406,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SampleAPP/SampleAPP-Prefix.pch";
 				INFOPLIST_FILE = "SampleAPP/SampleAPP-Info.plist";
@@ -457,6 +474,7 @@
 				1B59062819B2C09700CC9F1D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1B59062919B2C09700CC9F1D /* Build configuration list for PBXNativeTarget "SampleAPPTests" */ = {
 			isa = XCConfigurationList;
@@ -465,6 +483,7 @@
 				1B59062B19B2C09700CC9F1D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
